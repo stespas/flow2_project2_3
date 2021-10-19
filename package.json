@@ -5,7 +5,9 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "gulp": "gulp html"
+    "gulp": "gulp html",
+    "start": "gulp watch",
+    "css": "gulp css"
   },
   "repository": {
     "type": "git",
@@ -24,8 +26,10 @@
     "gulp-csso": "^4.0.1",
     "gulp-plumber": "^1.2.1",
     "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.0.0",
     "gulp-sourcemaps": "^3.0.0",
-    "postcss": "^8.3.9"
+    "postcss": "^8.3.9",
+    "sass": "^1.43.2"
   },
   "dependencies": {
     "append-buffer": "^1.0.2",

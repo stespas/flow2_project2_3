@@ -1,0 +1,1 @@
+{"version":3,"sources":["blocks/header.scss"],"names":[],"mappings":"AAAA,O,CACI,U,CACA,qB,CAGJ,yBACI,M,CACI,uB","file":"style.min.css","sourcesContent":[".header {\r\n    width: 100%;\r\n    background-color: #eee;\r\n}\r\n\r\n@media (max-width: 780px) {\r\n    header {\r\n        background-color: #fff;\r\n    }\r\n}"]}

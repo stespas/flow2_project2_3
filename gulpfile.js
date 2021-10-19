@@ -1,11 +1,10 @@
 const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
-var plumber = require("gulp-plumber");
-var sourcemap = require("gulp-sourcemaps");
-var postcss = require("gulp-postcss");
-var autoprefixer = require("gulp-autoprefixer");
-var csso = require("gulp-csso");
-var rename = require("gulp-rename")
+const plumber = require("gulp-plumber");
+const sourcemaps = require("gulp-sourcemaps");
+const sass = require("gulp-sass")(require('sass'))
+const csso = require("gulp-csso");
+const rename = require("gulp-rename")
 
 gulp.task('html', () => {
 
@@ -28,14 +27,11 @@ gulp.task('watch', () => {
   gulp.task("css", function () {
     return gulp.src("source/scss/style.scss")
       .pipe(plumber())
-      .pipe(sourcemap.init())
+      .pipe(sourcemaps.init())
       .pipe(sass())
-      .pipe(postcss([
-        autoprefixer()
-      ]))
       .pipe(csso())
       .pipe(rename("style.min.css"))
-      .pipe(sourcemap.write("."))
+      .pipe(sourcemaps.write("."))
       .pipe(gulp.dest("build/css"));
   });
  
