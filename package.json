@@ -18,8 +18,14 @@
   },
   "homepage": "https://github.com/TrukshinGleb/flow2_project2_3#readme",
   "devDependencies": {
+    "autoprefixer": "^10.3.7",
     "browser-sync": "^2.27.5",
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-csso": "^4.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "postcss": "^8.3.9"
   },
   "dependencies": {
     "append-buffer": "^1.0.2",
